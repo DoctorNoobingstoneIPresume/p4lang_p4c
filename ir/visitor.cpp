@@ -21,6 +21,14 @@ limitations under the License.
 
 #include "visitor.h"
 
+Visitor_Context::Visitor_Context():
+    parent     (nullptr),
+    node       (nullptr),
+    original   (nullptr),
+    child_index(-1),
+    child_name (nullptr),
+    depth      (-1)      {}
+
 /** @class Visitor::ChangeTracker
  *  @brief Assists visitors in traversing the IR.
 

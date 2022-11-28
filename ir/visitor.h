@@ -35,6 +35,9 @@ struct Visitor_Context {
     mutable int                 child_index;
     mutable const char          *child_name;
     int                         depth;
+
+    // Initialization helps produce (earlier) manifestation of forgetting to initialize:
+    Visitor_Context();
 };
 
 class Visitor  {
