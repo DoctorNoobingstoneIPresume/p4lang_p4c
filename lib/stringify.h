@@ -71,7 +71,7 @@ auto toString(T* value) -> typename std::enable_if<HasToString<T>::value, cstrin
 }
 
 cstring toString(bool value);
-cstring toString(std::string value);
+cstring toString(const std::string &value);
 cstring toString(const char* value);
 cstring toString(cstring value);
 cstring toString(StringRef value);
